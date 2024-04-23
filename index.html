@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos em JavaScript</title>
+</head>
+<body>
+
+<!-- (1) Mensagem de 'Olá Mundo' -->
+<script>
+    alert('Olá Mundo');
+</script>
+
+<!-- (2) Saída de soma de 2 inteiros -->
+<script>
+    var a = 5;
+    var b = 10;
+    var soma = a + b;
+    console.log("A soma de " + a + " e " + b + " é igual a " + soma);
+</script>
+
+<!-- (3) Alterar a propriedade de um elemento por id -->
+<div id="meuElemento">Este é o conteúdo original</div>
+
+<script>
+    document.getElementById("meuElemento").innerHTML = "Este é um novo conteúdo";
+</script>
+
+<!-- (4) Alterar a propriedade de um elemento por name -->
+<form>
+    <input type="text" name="meuInput" value="Valor original">
+</form>
+
+<script>
+    document.forms[0].elements["meuInput"].value = "Novo valor";
+</script>
+
+<!-- (5) Alterar a propriedade de um elemento por class -->
+<p class="minhaClasse">Este é um parágrafo com a classe 'minhaClasse'</p>
+
+<script>
+    var elementos = document.getElementsByClassName("minhaClasse");
+    for (var i = 0; i < elementos.length; i++) {
+        elementos[i].innerHTML = "Conteúdo alterado pela classe";
+    }
+</script>
+
+</body>
+</html>
